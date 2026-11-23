@@ -1,0 +1,137 @@
+
+.gestion-container {
+  min-height: 100vh;
+  padding: 35px;
+  background: #E7F3EF;
+  font-family: "Ibarra Real Nova", Georgia, serif;
+}
+
+.gestion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.gestion-header h1 {
+  color: #243B64;
+  margin-bottom: 5px;
+}
+
+.gestion-header p {
+  color: #666;
+}
+
+.gestion-volver {
+  background: #4A9F88;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.gestion-resumen {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.gestion-resumen article {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.gestion-resumen h3 {
+  color: #4A9F88;
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.gestion-resumen p {
+  color: #555;
+  margin: 0;
+}
+
+.gestion-tabla {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.gestion-tabla h2 {
+  color: #243B64;
+}
+
+.gestion-tabla input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  margin: 15px 0 20px;
+  border: 1px solid #DCEAFE;
+  border-radius: 8px;
+}
+
+.tabla-scroll {
+  overflow-x: auto;
+}
+
+.gestion-tabla table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.gestion-tabla th,
+.gestion-tabla td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.gestion-tabla th {
+  background: #E7F3EF;
+  color: #243B64;
+}
+
+.gestion-tabla select {
+  padding: 9px;
+  border: 1px solid #DCEAFE;
+  border-radius: 6px;
+  background: white;
+}
+
+@media (max-width: 600px) {
+  .gestion-container {
+    padding: 18px;
+  }
+
+  .gestion-resumen {
+    grid-template-columns: 1fr;
+  }
+
+  .gestion-header {
+    align-items: flex-start;
+  }
+}
+.gestion-tabla td {
+  color: #243B64;
+}
+
+.gestion-tabla select {
+  color: #243B64;
+  background-color: #FFFFFF;
+}
+
+.gestion-tabla input {
+  color: #243B64;
+  background-color: #FFFFFF;
+}
+
+.gestion-tabla input::placeholder {
+  color: #777777;
+}

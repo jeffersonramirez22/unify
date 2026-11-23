@@ -1,0 +1,154 @@
+
+.carrito-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #E7F3EF;
+  font-family: Arial, sans-serif;
+}
+
+.carrito-card {
+  max-width: 750px;
+  margin: 30px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.carrito-card h1 {
+  color: #243B64;
+}
+
+.carrito-card > p {
+  color: #666;
+}
+
+.carrito-evento {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.carrito-evento h2 {
+  color: #4A9F88;
+}
+
+.carrito-evento p {
+  color: #666;
+}
+
+.carrito-cantidad {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.carrito-cantidad button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 7px;
+  background: #4A9F88;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.carrito-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  color: #243B64;
+  font-size: 20px;
+}
+
+.carrito-continuar,
+.carrito-volver {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.carrito-continuar {
+  background: #4A9F88;
+  color: white;
+}
+
+.carrito-volver {
+  background: #eee;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .carrito-evento {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.carrito-cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.carrito-cantidad button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  line-height: 1;
+  font-size: 25px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #4A9F88;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carrito-cantidad button:hover {
+  background: #37836F;
+}
+
+.carrito-cantidad span {
+  min-width: 25px;
+  text-align: center;
+  color: #243B64;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.carrito-zona {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.carrito-zona label {
+  color: #243B64;
+  font-weight: bold;
+}
+
+.carrito-zona select {
+  width: 100%;
+  padding: 13px;
+  color: #243B64;
+  background: #FFFFFF;
+  border: 1px solid #7CB7A7;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+

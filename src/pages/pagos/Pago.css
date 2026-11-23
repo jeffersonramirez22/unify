@@ -1,0 +1,116 @@
+
+.pago-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #E7F3EF;
+  font-family: Arial, sans-serif;
+}
+
+.pago-card {
+  max-width: 550px;
+  margin: 20px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.pago-card h1 {
+  color: #243B64;
+}
+
+.pago-card > p {
+  color: #666;
+}
+
+.pago-resumen {
+  margin: 22px 0;
+  padding: 18px;
+  background: #E7F3EF;
+  border-radius: 10px;
+  color: #243B64;
+}
+
+.pago-resumen h2 {
+  margin-top: 0;
+  color: #4A9F88;
+}
+
+.pago-card form label {
+  display: block;
+  margin: 14px 0 7px;
+  color: #243B64;
+}
+
+.pago-card form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #243B64;
+}
+
+.pago-datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.pago-boton,
+.pago-volver {
+  width: 100%;
+  padding: 14px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pago-boton {
+  background: #4A9F88;
+  color: white;
+}
+
+.pago-volver {
+  margin-top: 10px;
+  background: #eee;
+  color: #333;
+}
+
+.pago-error {
+  color: #b42318;
+  font-size: 14px;
+}
+
+.pago-card small {
+  display: block;
+  margin-top: 18px;
+  color: #777;
+  line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+  .pago-card {
+    padding: 20px;
+  }
+}
+
+.pago-card form input {
+  color: #243B64 !important;
+  background-color: #FFFFFF !important;
+  opacity: 1;
+  font-size: 16px;
+  -webkit-text-fill-color: #243B64;
+}
+
+.pago-card form input::placeholder {
+  color: #777777 !important;
+  opacity: 1;
+  -webkit-text-fill-color: #777777;
+}
+
+.pago-card form input:focus {
+  outline: 2px solid #7CB7A7;
+  border-color: #4A9F88;
+}

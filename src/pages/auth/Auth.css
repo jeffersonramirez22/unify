@@ -1,0 +1,134 @@
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: #E7F3EF;
+  font-family: "Ibarra Real Nova", Georgia, serif;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  background: #FFFFFF;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.auth-logo span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  background: #4A9F88;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.auth-logo h1 {
+  color: #4A9F88;
+  margin: 10px 0 0;
+  font-size: 30px;
+}
+
+.auth-logo p,
+.auth-description {
+  color: #666;
+}
+
+.auth-card h2 {
+  text-align: center;
+  color: #243B64;
+}
+
+.auth-description {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-card label {
+  color: #243B64;
+  font-weight: 600;
+}
+
+.auth-card input {
+  padding: 13px;
+  border: 1px solid #DCEAFE;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.auth-card input:focus {
+  outline: 2px solid #7CB7A7;
+}
+
+.auth-button {
+  padding: 14px;
+  background: #4A9F88;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-button:hover {
+  background: #37836F;
+}
+
+.auth-error {
+  color: #C0392B;
+  font-size: 14px;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.auth-footer button {
+  background: none;
+  border: none;
+  color: #4A9F88;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.auth-success {
+  color: #37836F;
+  background: #E7F3EF;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+}
+.auth-recovery {
+  display: block;
+  margin: 0 auto 20px;
+  background: none;
+  border: none;
+  color: #4A9F88;
+  cursor: pointer;
+  font-size: 14px;
+}
