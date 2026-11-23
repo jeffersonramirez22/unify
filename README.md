@@ -147,3 +147,93 @@ https://github.com/jeffersonramirez22/unify
 ## Propósito académico
 
 Proyecto desarrollado con fines educativos para aplicar conceptos de desarrollo web, componentes React, gestión de estados, navegación, diseño responsive e integración de funcionalidades.
+
+## Inventario de componentes
+
+UNiFY está organizado en diferentes componentes y pantallas de React para facilitar el desarrollo y mantenimiento.
+
+| Componente | Función |
+|---|---|
+| App.jsx | Controla la navegación y conecta los módulos principales. |
+| Login.jsx | Permite iniciar sesión. |
+| Registro.jsx | Permite registrar nuevos usuarios. |
+| Recuperar.jsx | Simula la recuperación de contraseña. |
+| GestionUsuarios.jsx | Permite administrar usuarios. |
+| Eventos.jsx | Muestra el catálogo de eventos. |
+| Carrito.jsx | Permite seleccionar boletos y calcular el total. |
+| Pago.jsx | Valida los datos del pago simulado. |
+| Boleto.jsx | Muestra el boleto digital con código QR. |
+| Reportes.jsx | Presenta estadísticas de ventas. |
+| Boton.jsx | Componente reutilizable para botones. |
+| TarjetaEvento.jsx | Componente reutilizable para las tarjetas de eventos. |
+| TarjetaEstadistica.jsx | Muestra los indicadores de reportes. |
+| BarraEstadistica.jsx | Muestra las barras de ventas por evento y período. |
+
+Los componentes se comunican mediante propiedades (props) y funciones que permiten actualizar la información de la interfaz.
+
+## Mapa de estado y persistencia
+
+Para manejar los cambios en la aplicación utilizamos React Hooks.
+
+| Estado o información | Ubicación | Función |
+|---|---|---|
+| Usuario autenticado | useAuth | Controlar la sesión del usuario. |
+| Vista actual | App.jsx | Determinar qué pantalla se muestra. |
+| Evento seleccionado | App.jsx | Enviar el evento al carrito. |
+| Compra en proceso | App.jsx | Compartir los datos entre carrito y pago. |
+| Compra finalizada | App.jsx | Mostrar el boleto correspondiente. |
+| Datos del formulario | Pago.jsx | Validar los campos antes de confirmar. |
+| Ventas registradas | localStorage | Conservar las compras simuladas. |
+| Estadísticas | Reportes.jsx | Calcular boletos vendidos e ingresos. |
+
+El estado se maneja principalmente con `useState`. También utilizamos `useEffect` para ejecutar acciones relacionadas con cambios de estado.
+
+Las compras se guardan en `localStorage` mediante la clave `unify_boletos`. Los reportes consultan estos datos para mostrar las estadísticas.
+
+## Datos simulados
+
+La aplicación utiliza información de demostración para representar el funcionamiento de una plataforma de venta de boletos.
+
+Los eventos se encuentran definidos en `src/data/eventos.js`, mientras que los datos iniciales de usuarios están en `src/data/usuarios.js`.
+
+Cada evento contiene información como nombre, categoría, fecha, lugar, imagen y zonas con diferentes precios.
+
+Los formularios de pago utilizan datos ficticios. No se realizan cobros reales ni se conecta una pasarela de pago.
+
+## Flujo de estado durante la compra
+
+1. El usuario inicia sesión.
+2. Selecciona un evento del catálogo.
+3. El evento seleccionado se envía al carrito mediante props.
+4. El usuario selecciona la zona y cantidad de boletos.
+5. El carrito calcula el total y envía la información al módulo de pago.
+6. El formulario valida los datos ingresados.
+7. Al confirmar, la compra se guarda en `localStorage`.
+8. Se genera el boleto digital con código QR.
+9. El módulo de reportes utiliza los registros para calcular las estadísticas.
+
+## Limitaciones y decisiones de diseño
+
+- Se utilizó React con Vite para desarrollar una aplicación organizada en componentes.
+- Se mantuvo como referencia el prototipo de Figma de la primera entrega.
+- Se utilizaron los colores, imágenes, tipografía y logotipo de UNiFY.
+- El diseño contempla versiones para móvil, tablet y escritorio.
+- La navegación se controla mediante estados de React.
+- No se implementó un backend ni una base de datos real.
+- Los pagos son simulados y no procesan transacciones bancarias.
+- La información almacenada en `localStorage` depende del navegador utilizado.
+- Los datos no se sincronizan automáticamente entre diferentes dispositivos.
+
+## Evidencias de funcionamiento
+
+Las capturas de pantalla se encuentran en la carpeta `public/Capturas`.
+
+Se incluyen evidencias de la aplicación en los siguientes tamaños:
+
+- Móvil: 375 px.
+- Tablet: 768 px.
+- Escritorio: 1440 px.
+
+## Documento de arquitectura
+
+El documento complementario `Arquitectura_UNiFY.pdf` describe la organización de componentes, el manejo del estado, la persistencia y el flujo principal de
