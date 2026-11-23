@@ -6,7 +6,7 @@ import iconoQR from "../assets/icono-qr.png";
 import "./Home.css";
 
 
-function Home() {
+function Home({ onExplorarEventos }) {
     return (
         <main className="home">
             <section className="home__hero">
@@ -42,7 +42,7 @@ function Home() {
                         de forma rápida y segura.
                     </p>
 
-                    <button type="button">
+                    <button type="button" onClick={onExplorarEventos}>
                         Explorar eventos →
                     </button>
                 </div>
