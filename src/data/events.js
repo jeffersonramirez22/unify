@@ -58,6 +58,7 @@ const events = [
     priceFrom: 95.00,
     image: badBunny,
   },
+
   {
     id: 6,
     name: "Lago de los cisnes 2026",
@@ -67,7 +68,44 @@ const events = [
     location: "Teatro Nacional, San Salvador",
     priceFrom: 45.00,
     image: ballet,
+
+    description:
+      "¡Vive la magia de El Lago de los Cisnes! Disfruta del romance, la tradición y el virtuosismo de la obra maestra del ballet clásico en una puesta en escena deslumbrante.",
+
+    about:
+      "Una presentación de ballet clásico que combina música, danza y una historia llena de emociones. Una noche de gala con la obra cumbre de la danza clásica. Siente la majestuosidad de una historia eterna. ¡Cupos limitados, compra tus boletos antes de que se agoten!",
+
+    additionalInfo:
+      "Se recomienda llegar con anticipación. Presenta tu boleto digital al ingresar al evento.",
+
+
+
+    zones: [
+      {
+        id: 1,
+        name: "Zona VIP",
+        description: "Mejor vista, acceso preferencial.",
+        price: 85.00,
+        available: 40,
+      },
+      {
+        id: 2,
+        name: "Zona Preferencial",
+        description: "Excelente ubicación y vista al escenario.",
+        price: 65.00,
+        available: 80,
+      },
+      {
+        id: 3,
+        name: "Zona General",
+        description: "Ambiente cómodo y buena vista regular.",
+        price: 45.00,
+        available: 100,
+      },
+    ],
+
   },
+
   {
     id: 7,
     name: "Festival gastronómico 2026",

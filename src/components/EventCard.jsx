@@ -1,4 +1,10 @@
+
+import { useNavigate } from "react-router-dom";
+import "./EventCard.css";
+
 function EventCard({ event }) {
+    const navigate = useNavigate();
+
     return (
         <article className="event-card">
             <div className="event-card__image">
@@ -18,7 +24,10 @@ function EventCard({ event }) {
 
                 <p>Desde ${event.priceFrom.toFixed(2)}</p>
 
-                <button type="button">
+                <button
+                    type="button"
+                    onClick={() => navigate(`/eventos/${event.id}`)}
+                >
                     Ver evento
                 </button>
             </div>
@@ -27,5 +36,3 @@ function EventCard({ event }) {
 }
 
 export default EventCard;
-
-import "./EventCard.css";
